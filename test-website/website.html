@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+         <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <title>
+            My Test Website
+        </title>
+    </head>
+    
+    <body>
+        <span id="font">
+            <center>
+                <div>
+                    <h1 style="background-color: lightgray;"> <b>Music player test</b> </h1>
+                
+            </div>
+            </center>
+        
+        </span>
+        <center>
+            
+            
+            <div style="background-image: url(https://cdn-image.departures.com/sites/default/files/1577723868/header-mount-kilimanjaro-KILIMANJARO1219.jpg)" class="player">
+                
+                 <!-- Define the section for displaying details -->
+                <div class="details">
+                    <div class="now-playing">PLAYING x OF y</div> 
+                      <div class="track-art"></div> 
+                      <div class="track-name">Track Name</div> 
+                      <div class="track-artist">Track Artist</div> 
+                </div>
+                
+                 <!-- Define the section for displaying track buttons -->
+                <div class="buttons">
+                    
+                  <div class="prev-track" onclick="prevTrack()"> 
+                   <i class="fa fa-step-backward fa-2x"></i> 
+                  </div>  
+                    
+                  <div class="playpause-track" onclick="playpauseTrack()"> 
+                   <i class="fa fa-play-circle fa-5x"></i> 
+                  </div> 
+                    
+                  <div class="next-track" onclick="nextTrack()"> 
+                   <i class="fa fa-step-forward fa-2x"></i> 
+                  </div>
+                    
+                </div>
+                
+                <!-- Define the section for displaying the seek slider-->
+               <div class="slider_container"> 
+                  <div class="current-time">00:00</div> 
+                    <input type="range" min="1" max="100"
+                    value="0" class="seek_slider" onchange="seekTo()"> 
+                  <div class="total-duration">00:00</div> 
+               </div> 
+  
+                <!-- Define the section for displaying the volume slider-->
+               <div class="slider_container"> 
+                 <i class="fa fa-volume-down"></i> 
+                 <input type="range" min="1" max="100"
+                 value="99" class="volume_slider" onchange="setVolume()"> 
+                <i class="fa fa-volume-up"></i> 
+               </div>
+            </div>
+           <!-- Load the main script for the player -->
+           <script src="main.js"></script> 
+ 
+        </center>
+        
+        <span id="font">
+            <center>
+                <div>
+                    <h1 style="background-color: lightgray;"> <b>Youtube link test</b> </h1>
+                    
+            </div>
+            </center>
+        
+        </span>
+        <center>
+            <iframe width="717" height="538" src="https://www.youtube.com/embed/miZHa7ZC6Z0">
+        </iframe>
+        </center>
+        <span id="font">
+            <center>
+            <div>
+                <h1 style="background-color: lightgray;"> <b> Link test </b></h1>
+            </div>
+        </center>
+        </span>
+        
+        <center>
+            <a href="https://www.youtube.com/watch?v=6n3pFFPSlW4/">Click this link</a>
+        </center>
+        
+        <span id="font">
+            <center>
+            <div>
+                <h1 style="background-color: lightgray;"> <b> Image test </b></h1>
+            </div>
+        </center>
+        </span>
+        
+        <center>
+            <img src="https://cdn-image.departures.com/sites/default/files/1577723868/header-mount-kilimanjaro-KILIMANJARO1219.jpg" alt="Kilimanjaro">
+            <img src="Burgertown.jpg" alt="Burgertown">
+        </center>
+    </body>
+</html>
